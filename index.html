@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md Sakibul Islam</title>
+
+
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Monda|Montserrat|Pacifico|Russo+One&display=swap" rel="stylesheet">
+
+  <!--
+  00B73E
+  font-family: 'Pacifico', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Monda', sans-serif;
+font-family: 'Russo One', sans-serif;
+
+
+  -->
+
+
+  <!--fontawesome Icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+
+
+  <!-- CSS  -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="style.css" type="text/css" rel="stylesheet"/>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <style>
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #DBDBDB;
+}
+h1
+{
+  color: #009688 !important;
+
+
+
+
+  font-family: 'Pacifico', cursive;
+}
+h5
+{
+  font-family: 'Monda', sans-serif;
+  color: #ffffff;
+}
+
+p{
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sendbutton{
+  float: right;
+}
+
+.white-text:hover{
+  color: #29a99a
+}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+
+}
+.white{
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  z-index: 1030;
+  width: 100%;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+
+
+#home
+{
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("header-bg1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-section-text
+{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+
+
+#about
+  {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+.lead{
+  text-align: justify;
+}
+.social-icon{
+  padding-top: 1.5rem;
+}
+  .fab{
+
+    font-size: 2rem;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    margin: 0% 12% 0% 0%;
+  }
+
+
+  .fa-github-alt
+  {
+    color: #000;
+  }
+  .fa-instagram
+  {
+    color: #000;
+  }
+  .fa-facebook-f
+  {
+    color: #000;
+  }
+  .myimage img
+  {
+    width: 60%;
+
+  }
+.about-info{
+  margin: auto;
+}
+  #skills
+  {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("background2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .skills-section
+  {
+    padding: 1rem 0 1rem 0;
+  }
+  .progress
+  {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 13px;
+    border-radius: 13px;
+    background-color: #B6B6B6;
+  }
+  .skills-progress
+  {
+
+    margin: 5% 0 5% 0;
+    padding: 0;
+    text-align: left;
+
+  }
+  .determinate
+  {
+  background-image: linear-gradient(135deg,#009688 0,#009688 100%);
+      text-align: center;
+      line-height: 12px;
+      font-size: 8px;
+      letter-spacing: 5px;
+    }
+
+  #experiences
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("background1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.experiences-section
+{
+  padding: 5% 0%;
+}
+
+
+.icon
+{
+  font-size: 2.5rem;
+  margin: 2% auto;
+  padding: 5%;
+}
+.hoverhobe:hover{
+  background-color:#009688 !important;
+  color: #fff;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#content
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("background3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-section{
+  padding: 5% 0%;
+}
+.contact-form{
+  padding: 3%;
+}
+.form-control{
+  border-radius: 0 !important;
+  border:none;
+}
+::placeholder{
+  color: #999;
+}
+content-info{
+  padding: 3%;
+}
+.follow{
+  background-color: #fff;
+  padding: 3%;
+  margin: 5%;
+  margin-top: 3%;
+}
+b{
+  margin-right: 4%;
+}
+.footer{
+  text-align: center;
+  background-color: #fff;
+}
+.footer p{
+  padding: 2% 0%;
+  margin: 0;
+}
+.location-map{
+  margin: 3% 0% 0% 0%;
+}
+
+.cleardiv{
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+}
+
+  </style>
+
+
+  <!--script-->
+  <script src="js/typed.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div class="cleardiv">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#experiences">experiences</a></li>
+          <li><a href="#content">content</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#experiences">experiences</a></li>
+          <li><a href="#content">content</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+    <div id="home" class="parallax-container">
+      <div class="section no-pad-bot home-section-text">
+        <div class="container">
+
+          <br><br>
+          <h1 class="header center teal-text text-lighten-2" data-aos="zoom-in" data-aos-duration="1000">Md Sakibul Islam</h1>
+          <div class="row center">
+          </div>
+          <div class="row center" data-aos="fade-up" data-aos-duration="1000">
+            <a href="https://drive.google.com/open?id=1vZaCNlVGD3l5E9b8wFJOl-FSoIMOzwHK" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Download CV</a>
+          </div>
+          <br><br>
+
+        </div>
+      </div>
+      <div class="parallax"><img src="header-bg.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+
+
+    <div class="container">
+      <div id="about">
+
+        <div class="row">
+          <div class="col s12 m6" data-aos="fade-right" data-aos-duration="600">
+            <div class="myimage">
+              <img src="images/IMG_506.png" alt="images">
+            </div>
+          </div>
+
+          <div class="col s12 m6" data-aos="fade-left" data-aos-duration="600">
+            <h1>About</h1>
+            <p class="lead">
+              Hello, I’m glad to see that you are interested to
+              know about me. Well I am a web and mobile developer.
+              I was complete some android and web bootcamp.
+              Which is linked in my CV. As a coffee fan if you would
+              like to discuss some of your
+              project feel free to invite me over a cup of coffee by dropping
+              me a mail.
+            </p>
+            <div class="social-icon">
+              <a href="https://github.com/mdsakibulislamofficial"><i class="fab fa-github-alt"></i></a>
+              <a href="https://www.facebook.com/mdsakibulislam.page/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/mdsakibulislamofficial/"><i class="fab fa-instagram"></i></a>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="skills">
+      <h1>Skills</h1>
+    </div>
+    <div class="container">
+      <div class="skills-section">
+
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col s12 m6">
+
+            <div class="skills-progress">
+              <h6><a href="https://www.udemy.com/certificate/UC-0CPZ6N5G/?fbclid=IwAR213wpuFczOXNNMpNB02DmFAcx9iexDRKlSGjYObfJCWaIrhtvV7YwxOn4" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">C</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 90%">90%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="#" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">java</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 90%">90%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="https://www.udemy.com/certificate/UC-GAXCYZ11/?fbclid=IwAR1T9W3rEuy-QQbKh9z-88WN1qXTpVGATsRinG9l3zYjdGzml8npBIzhp-I" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">python</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 60%">60%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="#" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">dart</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 90%">90%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="#" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">javascript</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 70%">70%</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col s12 m6">
+
+            <div class="skills-progress">
+              <h6><a href="https://www.udemy.com/certificate/UC-1JLXA588/?fbclid=IwAR3dDJWdUN-9wTfyrxyvDdJhfh9S3idyWueV85XALkJnYXrEmLWr24vkSNo" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">Android Studio</a>
+              </h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 90%">90%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">Photoshop</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 90%">90%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="#" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">XD</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 95%">95%</div>
+              </div>
+            </div>
+            <div class="skills-progress">
+              <h6><a href="#" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">Linux</a></h6>
+              <div class="progress">
+                <div class="determinate" data-aos="fade-right" style="width: 55%">55%</div>
+              </div>
+              <div class="skills-progress">
+                <h6><a href="#" target="_blank" class="tooltipped" data-position="right" data-tooltip="View Certificate">Flutter</a></h6>
+                <div class="progress">
+                  <div class="determinate" data-aos="fade-right" style="width: 60%">60%</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="experiences">
+      <h1>Experiences</h1>
+    </div>
+
+    <div class="container">
+      <div class="experiences-section">
+        <div class="row">
+          <div class="col s12 m4 center hoverhobe" data-aos="fade-up" data-aos-duration="800">
+            <div class="icon"><i class="fas fa-desktop"></i></div>
+            <h3> Web Development</h3>
+            <p class="experiences-text">As a developer, I know how to create your website to run across devices using the latest technologies available. Do you want to see some project just click on it.</p>
+
+          </div>
+
+          <div class="col s12 m4 center hoverhobe" data-aos="fade-up" data-aos-duration="800">
+
+            <div class="icon"><i class="fas fa-tablet-alt"></i></div>
+            <h3>Mobile Development</h3>
+            <p>
+              As a design minded developer, I know how to create a mobile application. That will make your business more profitable. Check some of my project that will help you to know about my skills.
+            </p>
+
+          </div>
+
+          <div class="col s12 m4 center hoverhobe" data-aos="fade-up" data-aos-duration="800">
+
+            <div class="icon-block">
+              <div class="icon"><i class="fas fa-palette"></i></div>
+              <h3>Graphic Design</h3>
+              <p>
+                I like to keep it’s simple. My goals is make an user friendly design that anyone can easily understand and love that design. You want to see some design just click on it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="content">
+      <h1>Get in tuch</h1>
+    </div>
+    <div class="container">
+      <div class="content-section">
+        <div class="row">
+          <div class="col s12 m6" data-aos="fade-right" data-aos-duration="600">
+            <div class="follow">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">Name</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">E-mail</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">Phone</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" id="autocomplete-input" class="autocomplete">
+                  <label for="autocomplete-input">massage</label>
+                </div>
+              </div>
+
+              <br />
+              <a class="waves-effect waves-light btn sendbutton">Send</a>
+
+            </div>
+          </div>
+
+          <div class="col s12 m6" data-aos="fade-left" data-aos-duration="600">
+            <div class="follow">
+              <b><i class="fas fa-phone"></i></b>+880 1794 300 398
+            </div>
+            <div class="follow">
+              <b><i class="fas fa-envelope-open-text"></i></b>mdsakibulislamofficial@gmail.com
+            </div>
+            <div class="follow">
+              <b><i class="fas fa-map-marker-alt"></i></b>
+              Sagordi,Rupatali,Barisal,Bangladesh
+              </br>
+              <div class="location-map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1JwLwzbZqMiXiHjUye8K3BKlD5eHiFg_q" width="100%" height="300"></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Thanks for your browsing.</h5>
+            <p class="grey-text text-lighten-4">Thank you for your browsing. I am a college student. Every day I try to improve myself. Please, dropping me a message so that I can improve myself and thank you again.</p>
+
+
+          </div>
+
+          <div class="col l6 s12 ">
+            <h5 class="white-text">Social Media</h5>
+            <ul>
+              <li><a class="white-text" href="https://www.facebook.com/mdsakibulislam.page/">facebook</a></li>
+              <li><a class="white-text" href="https://www.instagram.com/mdsakibulislamofficial/">instagram</a></li>
+              <li><a class="white-text" href="https://www.instagram.com/mdsakibulislamofficial/">linked in</a></li>
+              <li><a class="white-text" href="https://github.com/mdsakibulislamofficial">github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="brown-text text-lighten-3" href="http://mdsakibulislam.com">Md Sakibul Islam</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!--script-->
+   <script src="js/smooth-scroll.js"></script>
+   <script>
+     var scroll = new SmoothScroll('a[href*="#"]');
+   </script>
+   <script>
+     AOS.init();
+   </script>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('body').bind('cut copy paste', function(e) {
+        e.preventDefault();
+      });
+      $('body').on("contextmenu", function(e) {
+        return false;
+      });
+    });
+  </script>
+
+</body>
+
+</html>
